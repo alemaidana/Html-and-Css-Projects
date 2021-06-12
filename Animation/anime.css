@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+.titulos{
+display: block;
+margin: auto;
+font-family: 'Roboto', sans-serif;  ;
+}
+
+.hireme {
+    text-align: center;
+    font-size: 7em;
+    color: #113686;
+    -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+            transform: skew(-5deg, -5deg) rotate(5deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    text-shadow: 1px 1px #3a61b6,
+                 2px 2px #3a61b6,
+                 3px 3px #3a61b6,
+                 4px 4px #3a61b6,
+                 5px 5px #3a61b6,
+                 6px 6px #3a61b6,
+                 7px 7px #3a61b6,
+                 8px 8px #233c72,
+                 9px 9px #233c72,
+                 10px 10px #233c72,
+                 11px 11px 15px rgba(0,0,0,0.5);
+   }
+
+.hiresub{
+    text-align: center;
+}
+
+.run{
+    position: absolute;
+    top:67%;
+    left:50%;
+    background: transparent url("spritesheet.png");
+    width: 116px;
+    height: 178px;
+    transform: translate(-50%, -50%);
+    margin: 2em auto;
+    animation: correr 1s steps(43) infinite;
+}
+
+.fondo{
+    height: 450px;
+    width: 803px;
+    position: relative;
+    background: url("mariolo.png");
+    animation: fondo 7s  infinite linear;
+    margin: auto;
+}
+
+
+@keyframes correr {
+ from{
+     background-position: 0;
+ }
+ to{
+     background-position: 4988px;
+ }
+}
+
+
+@keyframes fondo {
+    from{
+        background-position: 6573px;
+    }
+    to{
+        background-position: 0px;
+    }
+   }
+
+.sobremi{
+    margin: auto;
+}
+.sobremi h1{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 3em;
+
+}
+
+.card {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    margin: auto;
+    background-color: #301e4e;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .imgcard {
+    width:50%;
+    margin: auto;
+  }
+
+
+  .title {
+    color: #ff6e6c;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  
+.sub{
+    font-weight: 800;
+}
+
+.main{
+    font-weight: 400;
+    padding: 5px 8px;
+}
+
+  .fa {
+    padding: 20px;
+    width: 150px;
+    font-size: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+   }
